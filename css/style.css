@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* need to make navigation bar sticky */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    /* this needs to be checked */
+    /* position: sticky;
+    top: 80px; */
+    background-color: black;
+}
+
+.nav-items>a{
+    text-decoration: none;
+}
+
+.logo{
+    margin: auto 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-items  a{
+    text-decoration: none;
+}
+
+.for-users{
+    display: flex;
+    margin: auto 100px;
+
+}
+
+.for-users li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    list-style-type: none;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+
+main{
+    min-height: calc(100vh - 80px - 60px);
+    width: 100%;
+} 
+
+.content{
+    min-height: 600px;
+}
+
+.banner-image{
+    background-image: url('../img/intro-bg.jpg');
+    background-color: blanchedalmond;
+    height: 800px;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to be checked */
+.inner-banner-image{
+    width:60%; 
+    margin:auto;
+}
+
+.banner-content{
+    padding: 40px 80px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner-content>h2, .banner-content>a{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.banner-content>p{
+    margin: 10px;
+    font-size: 20px;    
+}
+
+.button{
+    border-radius: 7px;
+    padding: 15px 20px;
+    font-size: 30px;
+    color: #fff; 
+    background-color: #c9302c; 
+    border-color: #ac2925;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);   
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: rgb(235, 224, 224);
+}
+
+.card-items{
+    height: 300px;
+    width: 400px;
+    margin: auto 25px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+    border: solid 3px ghostwhite;
+    border-radius: 4px;
+}
+
+.card-items img{
+    width: 95%;
+    display: block;
+    margin: 2px auto;
+}
+
+.card-items-links{
+    text-decoration: none;
+}
+
+.card-items-links h3, .card-items-links p{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
